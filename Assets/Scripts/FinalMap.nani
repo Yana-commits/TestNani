@@ -1,0 +1,45 @@
+
+# Map
+
+@back bg3
+
+@hidePrinter 
+
+@choice Location_1 button:MapButtons/Location1 pos:-300,-300 handler:ButtonArea goto:.Loc1
+@choice Location_2 button:MapButtons/Location2 pos:300,-200 handler:ButtonArea goto:.Loc2
+
+@choice Forest button:MapButtons/Forest pos:200,200 
+
+@stop
+
+# Loc1
+@back bg1
+@if boo=1
+@char Kohaku.Happy
+Kohaku: Good choice! U are my best friend!
+@wait 1
+@hideChars
+@goto .Map
+@else
+@char Kohaku.Angry
+Kohaku: I always knew u are fool! 
+@hideChars
+@wait 1
+@goto .Map
+@endIf
+
+# Loc2
+@back bg2
+@If boo=2
+@char Nanikun.Happy
+Nanikun: Good choice! U are my best friend!
+@wait 1
+@hideChars
+@goto .Map
+@else
+@char Nanikun.Pain
+Nanikun: I always knew u are fool! 
+@hideChars
+@wait 1
+@goto .Map
+@endIf

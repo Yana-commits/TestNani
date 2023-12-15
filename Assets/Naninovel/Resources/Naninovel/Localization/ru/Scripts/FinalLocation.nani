@@ -1,0 +1,22 @@
+; English (United Kingdom) <en-GB> to Russian <ru> localization document for `FinalLocation` naninovel script
+
+# d851b633
+; Kohaku: i see that u already have got ths inmportant thing
+
+Kohaku: Я вижу ты добыл эту важную вещь
+# a3720679
+; Kohaku: Give it to me!
+
+Kohaku: Отдай это мне!
+# 6ccecc17
+; Nankun: No! Gve it to me!
+
+Nankun: Нет! Отдай это мне!
+# 8f3f16a4
+; @choice Kohaku set:boo=1
+
+# d48d3637
+; @choice Nanikun set:boo=2
+
+# ad5445b9
+; @choice Nobody set:boo=0

@@ -1,0 +1,15 @@
+; English <en> to Russian <ru> localization document for `Forest` naninovel script
+
+# 35a368ba
+; Nobodys here
+
+Никого...
+# b03ee3d5
+; Just leave ur prise here
+
+Просто отдай свой приз
+# 938a9c5d
+; @choice Leave goto:Map set:foo=2
+
+# 9a7b67a
+; @choice Keep goto:Map

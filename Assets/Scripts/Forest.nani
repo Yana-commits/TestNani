@@ -1,0 +1,11 @@
+
+@showUI GamePlayUI
+@back Forest
+@if foo=0
+Nobodys here
+@goto Map
+@else
+Just leave ur prise here
+@choice Leave goto:Map set:foo=2
+@choice Keep goto:Map
+@stop

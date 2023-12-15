@@ -1,0 +1,68 @@
+
+# Map
+
+@back bg3
+
+@hidePrinter 
+
+@choice Location_1 button:MapButtons/Location1 pos:-300,-300 handler:ButtonArea goto:.Loc1
+@choice Location_2 button:MapButtons/Location2 pos:300,-200 handler:ButtonArea goto:.Loc2
+@if foo>1
+@choice Forest button:MapButtons/Forest pos:200,200 handler:ButtonArea
+@else
+@choice Forest button:MapButtons/Forest pos:200,200 handler:ButtonArea goto:.Forest
+@endIf
+@stop
+
+# Loc1
+@back bg1
+
+@if foo=3
+@goto FinalLocation
+@else
+Its nothing here
+@goto .Map
+@endIf
+# Loc2
+@back bg2
+@if foo=2
+{name}: Well ,  i have done everthing ...
+{name}: What shoul i do?
+{name}: I know i should visit first location!
+@set "palce=\"Location 1\""
+@set foo=3
+@hidePrinter 
+@goto FinalLocation
+@else
+@char Nanikun.Confidence
+
+Nanikun: Hello , {name}!  Possibly u have heard already about that thing. but before...
+Nanikun: lets play game!
+@loadScene Demo
+Nanikun: Now u have this prize and can use it in the forest!
+@set place="Forest"
+@set foo=1
+@hideAll
+@goto .Map
+@endIf
+
+# Forest
+@back Forest
+
+@if foo=0
+Its nothing here
+
+@goto .Map
+@elseIf foo=2
+Now visit second locatoin
+@set "place=\"Location 2\""
+@goto .Map
+@else
+Jusl leave ur prise here.
+@choice Leave goto:.Forest set:foo=2
+
+
+
+@choice Keep goto:.Map
+
+@endIf

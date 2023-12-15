@@ -1,0 +1,16 @@
+; English (United Kingdom) <en-GB> to Russian <ru> localization document for `Location11` naninovel script
+
+# 6cf82a8
+; @input name summary:Name
+
+# 68826847
+; Kohaku: Hello , {name}!
+Kohaku: Привет , {name}!
+
+# 445baaef
+; Kohaku: u need to find one thing. 
+Kohaku: Тебе нужно найти одну важную вешь...
+
+# a68ae7c6
+; Kohaku: Now go and visit our good firend on second location
+Kohaku: теперь пойди и посети нашего хорошего друга на второй локации

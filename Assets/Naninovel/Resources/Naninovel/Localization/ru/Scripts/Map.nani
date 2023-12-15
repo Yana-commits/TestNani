@@ -1,0 +1,65 @@
+; English (United Kingdom) <en-GB> to Russian <ru> localization document for `Map` naninovel script
+
+# f42d40c3
+; @choice Location_1 button:MapButtons/Location1 pos:-300,-300 handler:ButtonArea goto:.Loc1
+@choice Локация_1 button:MapButtons/Location1 pos:-300,-300 handler:ButtonArea goto:.Loc1
+
+# 18986a0
+; @choice Location_2 button:MapButtons/Location2 pos:300,-200 handler:ButtonArea goto:.Loc2
+@choice Локация_2 button:MapButtons/Location2 pos:300,-200 handler:ButtonArea goto:.Loc2
+
+# 7029a1a3
+; @choice Forest button:MapButtons/Forest pos:200,200 handler:ButtonArea
+@choice Лес button:MapButtons/Forest pos:200,200 handler:ButtonArea
+
+# d87273d5
+; @choice Forest button:MapButtons/Forest pos:200,200 handler:ButtonArea goto:.Forest
+@choice Лес button:MapButtons/Forest pos:200,200 handler:ButtonArea goto:.Forest
+
+# da26086e
+; Its nothing here
+Ничего здесь нет
+
+# e33d5398
+; {name}: Well ,  i have done everthing ...
+{name}: Ну ,  я выполнил все ...
+
+# b62c8039
+; {name}: What shoul i do?
+{name}: Что же мне делать?
+
+# dc6e6ac5
+; {name}: I know i should visit first location!
+{name}: Знаю!!Я нужно посетить первую локацию
+
+# c68652e7
+; Nanikun: Hello , {name}!  Possibly u have heard already about that thing. but before...
+Nanikun: Привет, {name}!  Возможно ты уже слышал о той вещи, но для начала...
+
+# 4cd89865
+; Nanikun: lets play game!
+Nanikun: Съиграем в игру!
+
+# d6300aff
+; Nanikun: Now u have this prize and can use it in the forest!
+Nanikun: Сейчас у тебя есть приз и ты можешь использовать его в лесу!
+
+# da26086e
+; Its nothing here
+Ничего здесь нет
+
+# c7a3399d
+; Now visit second locatoin
+Теперь посети вторую олкацию
+
+# f22f98de
+; Jusl leave ur prise here.
+Просто отдавь свой приз 
+
+# ceb13b44
+; @choice Leave goto:.Forest set:foo=2
+@choice Отдать goto:.Forest set:foo=2
+
+# d71e8eca
+; @choice Keep goto:.Map
+@choice Оставить goto:.Map

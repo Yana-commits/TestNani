@@ -1,0 +1,16 @@
+
+# Location1_1
+@hideUI GamePlayUI
+@back bg1
+@input name summary:Name
+@stop
+@showUI GamePlayUI
+@char Kohaku
+Kohaku: Hello , {name}!
+Kohaku: u need to find one thing. 
+Kohaku: Now go and visit our good firend on second location
+
+@hideChars
+@set place="Location 2"
+@goto Map
+@stop

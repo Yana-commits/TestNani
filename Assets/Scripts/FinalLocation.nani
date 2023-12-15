@@ -1,0 +1,27 @@
+
+@hideUI GamePlayUI
+@back bg1
+@char Kohaku
+@char Nanikun
+Kohaku: i see that u already have got ths inmportant thing
+Kohaku: Give it to me!
+Nankun: No! Gve it to me!
+@choice Kohaku set:boo=1
+@choice Nanikun set:boo=2
+@choice Nobody set:boo=0
+@stop
+
+
+
+
+
+
+
+
+
+@hide Nanikun
+@wait 2
+@hide Kohaku
+
+@goto FinalMap
+@stop
